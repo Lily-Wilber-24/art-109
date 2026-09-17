@@ -1,0 +1,98 @@
+
+
+body{
+    animation: change-color 4s infinite alternate;
+}
+
+@keyframes change-color{
+    0% {background-color: rgb(255, 0, 0);}
+    50% {background-color: rgb(251, 255, 0);}
+    100% {background-color: rgb(0, 208, 255);}
+}
+
+.title {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(30deg, 20deg);}
+}
+
+.square {
+    background-color: darkgreen;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: blue;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    background-color: aquamarine;
+    color:black;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color: blue;
+    transform: scale(1.5);
+    color:azure;
+}
+
+.loading {
+    background-color: darkmagenta;
+    animation: stretch 5s infinite alternate;
+    width: 80wv;
+    color:aliceblue;
+}
+
+@keyframes stretch {
+    0%{width: 100px;}
+    100%{width: 80vw;}
+}
+
+
+.yippee {
+    background-color: fuchsia;
+    color: black;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    display: block;
+    margin: 80px auto;
+    transition: all 2s;
+}
+
+.yippee:hover {
+    transform: rotate(1080deg) scale(2) skewX(60deg);
+}
+
+.aaa {
+    color: purple;
+    font-size: 50px;
+    animation: throw 1.5s infinite alternate;
+}
+
+@keyframes throw {
+    0%{margin-left: 20px;}
+    100%{margin-left: 83%;
+    color: green;}
+}
