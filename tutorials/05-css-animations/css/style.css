@@ -92,7 +92,6 @@ body{
 }
 
 @keyframes throw {
-    0%{margin-left: 20px;}
-    100%{margin-left: 83%;
-    color: green;}
+    0%{margin-left: 20px; font-size: 50px;}
+    100%{margin-left: 67%; color: green; font-size: 100px;}
 }
