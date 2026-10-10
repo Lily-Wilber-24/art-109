@@ -50,7 +50,6 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: 'Times New Roman', Times, serif;
-    /* text-align: justify; */
 }
 
 header {
@@ -131,6 +130,7 @@ nav a:hover {
 
 main {
     margin: 0;
+    text-align: center;
 }
 
 @media (max-width: 1030px){
@@ -162,8 +162,16 @@ main {
  
 /* project content is for project pages  */
 
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    display:block;
+    border-radius: .5rem;
+    aspect-ratio: 16/9;
+}
+
 .project-content {
-    text-align: justify;
+    text-align: center;
 }
 
 .project-content img {
