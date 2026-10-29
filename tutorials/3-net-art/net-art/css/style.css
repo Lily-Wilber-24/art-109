@@ -1,0 +1,33 @@
+
+.words{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 2rem;
+}
+
+.forest{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tree-click{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.words-2{
+    position: relative;
+    top: 45rem;
+    left: 30px;
+    font-size: 2rem;
+   color: rgb(251, 251, 251);
+}
+
+.forest-road{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
