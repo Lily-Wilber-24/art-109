@@ -31,3 +31,179 @@
     width: 100%;
     height: 100%;
 }
+.words-3, .words-5{
+    position: relative;
+    top: 10rem;
+    left: 30px;
+    font-size: 2rem;
+   color: rgb(251, 251, 251);
+}
+
+.words-4{
+    position: relative;
+    top: 25rem;
+    left: 85rem;
+    font-size: 2rem;
+   color: rgb(251, 251, 251);
+}
+
+.forest-road-further{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.words-6{
+    position: relative;
+    top: 40rem;
+    left: 70rem;
+    font-size: 2rem;
+   color: rgb(251, 251, 251);
+}
+
+.overwhelm{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.words-7{
+    position: relative;
+    top: 5rem;
+    left: 30px;
+    font-size: 2rem;
+   color: rgb(251, 251, 251);
+}
+
+.words-8{
+    position: relative;
+    top: 10rem;
+    left: 20rem;
+    font-size: 2rem;
+   color: rgb(251, 251, 251);
+}
+
+.leaf-pile{
+    position:relative;
+    top: 37rem;
+    left:90rem;
+    width:15%;
+    height:15%;
+}
+
+.leaf-pile:hover{
+    transform:scale(1.5);
+}
+
+.clearing{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mouse-leaves{
+    width: 100%;
+    height: 100%;
+}
+
+.log{
+    position:relative;
+    top: 20rem;
+    left:20rem;
+    width:10%;
+    height:10%;
+}
+
+.log:hover{
+    transform:scale(1.5);
+}
+
+.spider{
+    width: 100%;
+    height: 100%;
+}
+
+.branch{
+    position:relative;
+    top: -32rem;
+    left:72rem;
+    width:40%;
+    height:40%;
+}
+
+.branch:hover{
+    transform:scale(1.1);
+}
+
+.stick-bug{
+    width:100%;
+    height:100%;
+}
+
+.bark{
+    position:relative;
+    top: -20rem;
+    left:69rem;
+    width:4%;
+    height:4%;
+}
+
+.bark:hover{
+    transform:scale(1.3);
+}
+
+.hawk-moth{
+    width:100%;
+    height:100%;
+}
+
+.plant{
+    position: relative;
+    top:-20rem;
+    left:60rem;
+    width:7%;
+    height:7%;
+}
+
+.plant:hover{
+    transform:scale(1.3);
+}
+
+.ladybug{
+    width:100%;
+    height:100%;
+}
+
+.stone{
+    position: relative;
+    top:-30rem;
+    left:40rem;
+    width:2%;
+    height:2%;
+}
+
+.stone:hover{
+    transform: scale(1.5);
+}
+
+.rosy-moth{
+    width: 100%;
+    height: 100%;
+}
+
+.rock{
+    position: relative;
+    top:-32rem;
+    left:85rem;
+    width:5%;
+    height:5%;
+}
+
+.rock:hover{
+    transform: scale(1.4);
+}
+
+.luna-moth{
+    width: 100%;
+    height: 100%;
+}
