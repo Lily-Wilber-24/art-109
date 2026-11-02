@@ -7,16 +7,11 @@
 }
 
 .forest{
+    display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width:100%;
 }
 
-.tree-click{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 .words-2{
     position: relative;
@@ -28,8 +23,7 @@
 
 .forest-road{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width:100%;
 }
 .words-3, .words-5{
     position: relative;
@@ -49,8 +43,7 @@
 
 .forest-road-further{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width:100%;
 }
 
 .words-6{
@@ -63,8 +56,7 @@
 
 .overwhelm{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width:100%;
 }
 
 .words-7{
@@ -85,7 +77,7 @@
 
 .leaf-pile{
     position:relative;
-    top: 37rem;
+    top: 50rem;
     left:90rem;
     width:15%;
     height:15%;
@@ -97,18 +89,16 @@
 
 .clearing{
     position: absolute;
-    width: 100%;
-    height: 100%;
+   max-width:100%;
 }
 
 .mouse-leaves{
-    width: 100%;
-    height: 100%;
+   max-width:100%;
 }
 
 .log{
     position:relative;
-    top: 20rem;
+    top: 40rem;
     left:20rem;
     width:10%;
     height:10%;
@@ -119,8 +109,7 @@
 }
 
 .spider{
-    width: 100%;
-    height: 100%;
+    max-width:100%;
 }
 
 .branch{
@@ -136,14 +125,13 @@
 }
 
 .stick-bug{
-    width:100%;
-    height:100%;
+    max-width:100%;
 }
 
 .bark{
     position:relative;
-    top: -20rem;
-    left:69rem;
+    top: -10rem;
+    left:68rem;
     width:4%;
     height:4%;
 }
@@ -153,13 +141,12 @@
 }
 
 .hawk-moth{
-    width:100%;
-    height:100%;
+    max-width:100%;
 }
 
 .plant{
     position: relative;
-    top:-20rem;
+    top:-10rem;
     left:60rem;
     width:7%;
     height:7%;
@@ -170,13 +157,12 @@
 }
 
 .ladybug{
-    width:100%;
-    height:100%;
+    max-width:100%;
 }
 
 .stone{
     position: relative;
-    top:-30rem;
+    top:-15rem;
     left:40rem;
     width:2%;
     height:2%;
@@ -187,13 +173,12 @@
 }
 
 .rosy-moth{
-    width: 100%;
-    height: 100%;
+    max-width:100%;
 }
 
 .rock{
     position: relative;
-    top:-32rem;
+    top:-18rem;
     left:85rem;
     width:5%;
     height:5%;
@@ -204,6 +189,343 @@
 }
 
 .luna-moth{
-    width: 100%;
-    height: 100%;
+    max-width:100%;
+}
+
+@media(max-width:1820px){
+    main{
+        .words-6{
+            left:60rem;
+        }
+        .bark{
+            left:65rem;
+        }
+    }
+}
+
+@media(max-width:1700px){
+    main{
+        .bark{
+            left:60rem;
+        }
+        .leaf-pile{
+            left:80rem;
+        }
+        .branch{
+            left:65rem;
+        }
+        .stone{
+            top:-14rem;
+            left:35rem;
+        }
+    }
+}
+
+@media(max-width:1650px){
+    main{
+        .words-6{
+            left:50rem;
+        }
+        .words-8{
+            left:10rem;
+        }
+    }
+}
+
+@media(max-width:1550px){
+    main{
+        .bark{
+            left:55rem;
+        }
+        .log{
+            top:30rem;
+        }
+        .leaf-pile{
+            top:40rem;
+            left:60rem;
+        }
+        .rock{
+            left:70rem;
+        }
+        .plant{
+            left:40rem;
+        }
+        .stone{
+            left:30rem;
+        }
+        .branch{
+            top:-25rem;
+        }
+    }
+}
+
+@media(max-width:1490px){
+    main{
+        .words-6{
+            top:30rem;
+            left:35rem;
+        }
+        .words-8{
+            left:5rem;
+        }
+    }
+}
+
+@media(max-width:1400px){
+    main{
+        .bark{
+            left:50rem;
+        }
+        .log{
+            top:25rem;
+        }
+        .leaf-pile{
+            top:35rem;
+            left:55rem;
+        }
+        .rock{
+            top:-15rem;
+            left:60rem;
+        }
+        .branch{
+            top:-25rem;
+            left:55rem;
+        }
+    }
+}
+
+@media(max-width:1250px){
+    main{
+        .words-2{
+            top:30rem;
+        }
+        .words-6{
+            top:20rem;
+            left:20rem;
+        }
+        .bark{
+            left:45rem;
+        }
+        .log{
+            top:20rem;
+        }
+        .leaf-pile{
+            top:30rem;
+            left:55rem;
+        }
+        .rock{
+            top:-18rem;
+            left:60rem;
+        }
+        .plant{
+            left:35rem;
+        }
+        .stone{
+            top:-16rem;
+            left:25rem;
+        }
+        .branch{
+            top:-25rem;
+        }
+    }
+}
+
+@media(max-width:1100px){
+    main{
+        .bark{
+            left:40rem;
+        }
+        .log{
+            top:15rem;
+            left:10rem;
+        }
+        .leaf-pile{
+            top:25rem;
+            left:45rem;
+        }
+        .rock{
+            top:-18rem;
+            left:50rem;
+        }
+        .plant{
+            left:35rem;
+        }
+        .stone{
+            top:-16rem;
+            left:25rem;
+        }
+        .branch{
+            top:-25rem;
+            left:40rem;
+        }
+    }
+}
+
+@media (max-width: 1030px){
+    main{
+        .words, .words-2, .words-3, .words-4, .words-5, .words-6, .words-7, .words-8{
+            font-size: 1.5rem;
+        }
+        .words-8{
+            left:2rem;
+        }
+         .bark{
+            left:37rem;
+        }
+        .log{
+            top:15rem;
+            left:10rem;
+        }
+        .leaf-pile{
+            top:25rem;
+            left:45rem;
+        }
+        .rock{
+            top:-13rem;
+            left:50rem;
+        }
+        .plant{
+            top:-8rem;
+            left:30rem;
+        }
+        .stone{
+            top:-10rem;
+            left:20rem;
+        }
+        .branch{
+            top:-20rem;
+            left:40rem;
+        }
+    }
+}
+
+@media (max-width: 950px){
+    main{
+        .words-2{
+            top:20rem;
+        }
+        .words-6{
+            top:10rem;
+            left:5rem;
+        }
+         .bark{
+            left:34rem;
+        }
+        .log{
+            top:15rem;
+            left:10rem;
+        }
+        .leaf-pile{
+            top:20rem;
+            left:35rem;
+        }
+        .rock{
+            top:-13rem;
+            left:45rem;
+        }
+        .plant{
+            top:-8rem;
+            left:25rem;
+        }
+        .stone{
+            top:-12rem;
+            left:20rem;
+        }
+        .branch{
+            top:-20rem;
+            left:35rem;
+        }
+    }
+}
+
+@media(max-width:840px){
+    main{
+        .bark{
+            left:30rem;
+        }
+        .log{
+            top:10rem;
+            left:5rem;
+        }
+        .leaf-pile{
+            top:18rem;
+            left:30rem;
+        }
+        .rock{
+            top:-13rem;
+            left:40rem;
+        }
+        .stone{
+            top:-12rem;
+            left:17rem;
+        }
+        .branch{
+            top:-20rem;
+            left:30rem;
+        }
+    }
+}
+
+@media(max-width:700px){
+    main{
+        .bark{
+            top:-13rem;
+            left:25rem;
+        }
+        .log{
+            top:10rem;
+            left:5rem;
+        }
+        .leaf-pile{
+            top:15rem;
+            left:25rem;
+        }
+        .plant{
+            left:20rem;
+        }
+        .rock{
+            top:-13rem;
+            left:30rem;
+        }
+        .stone{
+            top:-11rem;
+            left:14rem;
+        }
+        .branch{
+            top:-12rem;
+            left:26rem;
+        }
+    }
+}
+
+@media (max-width:620px){
+    main{
+        .words-2{
+            top:10rem;
+        }
+         .bark{
+            top:-13rem;
+            left:22rem;
+        }
+        .log{
+            top:5rem;
+        }
+        .leaf-pile{
+            top:12rem;
+        }
+        .plant{
+            left:16rem;
+        }
+        .rock{
+            left:25rem;
+        }
+        .stone{
+            top:-11rem;
+            left:13rem;
+        }
+        .branch{
+            top:-10rem;
+            left:23rem;
+        }
+    }
 }
