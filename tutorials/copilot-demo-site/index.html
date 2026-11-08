@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0e0c0c">
+    <meta name="description" content="The save point for point-and-click adventure fans.">
+    <title>Cursor &amp; Key — Adventure Game Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="site-shell">
+        <!-- Status strip and site identity. -->
+        <div class="system-bar">
+            <span><span class="status-light"></span> CONNECTION ESTABLISHED</span>
+            <span>EST. 1994 <span class="bar-divider">/</span> A PLACE FOR LOST ADVENTURERS</span>
+        </div>
+
+        <header class="masthead">
+            <a class="wordmark" href="#" aria-label="Cursor and Key home">
+                <span class="wordmark-icon" aria-hidden="true">[&gt;_]</span>
+                <span>CURSOR<span class="wordmark-amp">&amp;</span>KEY<span class="wordmark-period">.</span></span>
+            </a>
+            <p class="masthead-tagline">THE POINT-AND-CLICK ADVENTURE CLUB · OPEN AFTER THE CIRCUS</p>
+            <a class="join-link" href="#new-transmission"><span aria-hidden="true">+</span> NEW TRANSMISSION</a>
+        </header>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a class="nav-link active" href="#forum">THE FORUM</a>
+            <a class="nav-link" href="#field-notes">FIELD NOTES</a>
+            <a class="nav-link" href="#new-transmission">LEAVE A MESSAGE</a>
+            <span class="nav-coordinates">YOU ARE HERE: <span>THE INTERNET</span></span>
+        </nav>
+
+        <!-- Decorative midway bunting; hidden from assistive technology. -->
+        <div class="bunting" aria-hidden="true">
+            <span>★</span><span>✦</span><span>★</span><span>✦</span><span>★</span><span>✦</span><span>★</span><span>✦</span><span>★</span><span>✦</span><span>★</span>
+        </div>
+
+        <main>
+            <!-- Intro banner pairs the forum welcome with an ASCII adventure scene. -->
+            <section class="intro" aria-labelledby="intro-title">
+                <div class="intro-copy">
+                    <p class="eyebrow"><span aria-hidden="true">✳</span> A FRIENDLY CORNER OF THE MIDWAY</p>
+                    <h1 id="intro-title">Look closer.<br><span>Talk to everyone.</span></h1>
+                    <p class="intro-description">Hints, hot takes, and suspiciously specific inventory advice from people who still click every pixel. Step right up—the Carnival Master is expecting you.</p>
+                    <div class="intro-stats">
+                        <span><b>2,481</b> ADVENTURERS</span>
+                        <span class="stat-divider">/</span>
+                        <span><b>16</b> IN THE PUB</span>
+                    </div>
+                    <div class="inventory-strip" aria-label="Inventory: brass key, old map, ticket stub, and unknown item">
+                        <span class="inventory-label">INVENTORY:</span>
+                        <span>[*] BRASS KEY</span>
+                        <span>[#] OLD MAP</span>
+                        <span class="inventory-ticket">[@] TICKET STUB</span>
+                        <span class="inventory-mystery">[?] ???</span>
+                    </div>
+                </div>
+                <!-- ASCII midway scene, including the small clown prop. -->
+                <div class="intro-art" aria-label="ASCII art depicting a carnival big top and ferris wheel">
+                    <div class="art-label">LOCATION: THE MIDWAY</div>
+                    <pre aria-hidden="true">          .-""""-.
+         /  BIG   \
+        /   TOP    \
+       /____________\
+       |  .------.  |       .---.
+       |  |  __  |  |      /  o  \
+       |  | |  | |  |     | o---o |
+       |_|_|__|_|__|      \  o  /
+      *--- MIDWAY ---*      '---'
+        /  |    |  \       FERRIS</pre>
+                    <pre class="clown-ascii" aria-hidden="true"> .-""""-.
+ /| o o |\
+| |  ^  | |
+ \| '-' |/
+  /|___|\</pre>
+                    <div class="art-caption"><span class="cursor-blink">_</span> It looks quiet. Probably a trap.</div>
+                </div>
+            </section>
+
+            <!-- Forum sidebar filters the conversation list by topic. -->
+            <div class="forum-layout" id="forum">
+                <aside class="sidebar" aria-label="Forum filters and community">
+                    <section class="side-section">
+                        <h2 class="side-heading">PICK A PATH <span>01</span></h2>
+                        <div class="category-list" role="group" aria-label="Filter by category">
+                            <button class="category-button selected" type="button" data-category="all"><span class="category-icon">[*]</span> All conversations <span class="category-count">33</span></button>
+                            <button class="category-button" type="button" data-category="help"><span class="category-icon">[?]</span> Need a hint? <span class="category-count">11</span></button>
+                            <button class="category-button" type="button" data-category="lore"><span class="category-icon">[!]</span> Lore &amp; theories <span class="category-count">12</span></button>
+                            <button class="category-button" type="button" data-category="collection"><span class="category-icon">[+]</span> The collection <span class="category-count">05</span></button>
+                            <button class="category-button" type="button" data-category="off-topic"><span class="category-icon">[~]</span> The pub <span class="category-count">05</span></button>
+                        </div>
+                    </section>
+
+                    <section class="side-section field-notes" id="field-notes">
+                        <h2 class="side-heading">FIELD NOTES <span>02</span></h2>
+                        <a class="note-link" href="#threads"><span class="note-mark">↳</span> A field guide to suspicious circus tents</a>
+                        <a class="note-link" href="#threads"><span class="note-mark">↳</span> What the Carnival Master won't tell you</a>
+                        <a class="note-link" href="#threads"><span class="note-mark">↳</span> Why every carnival has a locked trailer</a>
+                    </section>
+
+                    <section class="online-card">
+                        <div class="online-title"><span class="status-light"></span> BACKSTAGE RIGHT NOW</div>
+                        <div class="online-avatars" aria-label="Six members are online">
+                            <span>MP</span><span>AL</span><span>JR</span><span>TK</span><span>+</span>
+                        </div>
+                        <p><b>16 adventurers</b> are avoiding the plot backstage.</p>
+                        <pre class="ascii-signal" aria-hidden="true">  .----.
+ / HELLO \
+ |  ^_^  |
+ '------'</pre>
+                    </section>
+
+                     <!-- Sidebar props add a backstage ticket and a deliberately silly chicken. -->
+                     <div class="carnival-ticket" aria-label="Decorative ticket to the midnight show">
+                         <span class="ticket-stamp">ADMIT<br>ONE</span>
+                         <span class="ticket-details"><b>MIDNIGHT SHOW</b><small>THE CARNIVAL MASTER</small></span>
+                         <span class="ticket-number">№ 001</span>
+                     </div>
+                    <div class="rubber-chicken" aria-label="A rubber chicken prop with a honk warning">
+                        <pre aria-hidden="true">  __
+ &gt;(o )___
+  ( ._&gt; /
+   `---'   HONK!</pre>
+                        <span>IMPORTANT PROP — DO NOT SQUEEZE (SERIOUSLY)</span>
+                    </div>
+                </aside>
+
+                <section class="discussion" aria-labelledby="discussion-heading">
+                    <div class="discussion-header">
+                        <div>
+                            <p class="eyebrow">THE MESSAGE BOARD</p>
+                            <h2 id="discussion-heading">Recent conversations<span class="heading-period">.</span></h2>
+                        </div>
+                        <label class="search-box">
+                            <span aria-hidden="true">⌕</span>
+                            <span class="visually-hidden">Search conversations</span>
+                            <input id="thread-search" type="search" placeholder="Search the board..." autocomplete="off">
+                            <kbd>/</kbd>
+                        </label>
+                    </div>
+
+                    <div class="thread-toolbar">
+                        <p><span id="result-count">15</span> THREADS FOUND <span class="toolbar-divider">/</span> SORTED BY <b>LAST ACTIVITY</b></p>
+                        <span class="live-indicator"><span class="status-light"></span> LIVE</span>
+                    </div>
+
+                    <!-- Each article is one conversation; JavaScript filters and adds threads here. -->
+                    <div class="thread-list" id="threads" aria-live="polite">
+                        <article class="thread-card" data-category="help" data-title="How do I get into the Carnival Master's midnight show?">
+                            <div class="thread-vote" aria-label="16 votes"><span aria-hidden="true">▲</span><b>16</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-help">NEED A HINT?</span><span>STARTED BY <b>velvetcurtain</b></span></div>
+                                <h3><a href="#new-transmission">How do I get into the Carnival Master's midnight show?</a></h3>
+                                <p class="thread-excerpt">The ticket booth is closed, but I can hear music coming from the big top. What clue did I miss?</p>
+                                <!-- Expand to read sample replies without leaving the board. -->
+                                <details class="reply-preview">
+                                    <summary>2 REPLIES — READ THE HINTS</summary>
+                                    <p><b>blueballoon:</b> Check the back of your ticket stub under the lantern light.</p>
+                                    <p><b>three_rings:</b> And knock three times. The ringmaster loves a bit of drama.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;2 MIN AGO</span><span>◉ &nbsp;41 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>02</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-blue">TR</span><span><b>three_rings</b><small>JUST NOW</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="The Carnival Master's portrait has one extra shadow">
+                            <div class="thread-vote" aria-label="24 votes"><span aria-hidden="true">▲</span><b>24</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>marquee_moth</b></span></div>
+                                <h3><a href="#new-transmission">The Carnival Master's portrait has one extra shadow</a></h3>
+                                <p class="thread-excerpt">There are only four people in the photo, but I count five shadows. Is the fifth person standing behind the canvas?</p>
+                                <details class="reply-preview">
+                                    <summary>3 REPLIES — JOIN THE THEORY</summary>
+                                    <p><b>paper_moon:</b> The shadow moves when the midway lights flicker.</p>
+                                    <p><b>last_call:</b> Compare it with the silhouette in the funhouse mirror!</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;11 MIN AGO</span><span>◉ &nbsp;68 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>03</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-orange">LC</span><span><b>last_call</b><small>4 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="Did anyone else hear the Carnival Master say our names?">
+                            <div class="thread-vote" aria-label="19 votes"><span aria-hidden="true">▲</span><b>19</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>echo_in_the_tent</b></span></div>
+                                <h3><a href="#new-transmission">Did anyone else hear the Carnival Master say our names?</a></h3>
+                                <p class="thread-excerpt">During the brass-band loop, there's a whisper between verses. I swear it called out my username.</p>
+                                <details class="reply-preview">
+                                    <summary>2 REPLIES — LISTEN CLOSELY</summary>
+                                    <p><b>circus_crow:</b> It changes every time you solve a midway game.</p>
+                                    <p><b>mirrormaze:</b> Try listening from inside the hall of mirrors.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;23 MIN AGO</span><span>◉ &nbsp;82 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>02</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-purple">MM</span><span><b>mirrormaze</b><small>7 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="Who is the Carnival Master when the lights go out?">
+                            <div class="thread-vote" aria-label="38 votes"><span aria-hidden="true">▲</span><b>38</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>last_call</b></span></div>
+                                <h3><a href="#new-transmission">Who is the Carnival Master when the lights go out?</a></h3>
+                                <p class="thread-excerpt">His portrait changes after closing time. I think the person behind the curtain is one of the missing performers.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 18 REPLIES</summary>
+                                    <p><b>paper_moon:</b> The portrait is older in the morning. I checked twice!</p>
+                                    <p><b>circus_crow:</b> Look at the empty costume rack behind his office.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;JUST NOW</span><span>◉ &nbsp;73 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>18</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-purple">LC</span><span><b>last_call</b><small>1 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="help" data-title="A gentle hint for the Carnival Master's locked office?">
+                            <div class="thread-vote" aria-label="21 votes"><span aria-hidden="true">▲</span><b>21</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-help">NEED A HINT?</span><span>STARTED BY <b>velvetrope</b></span></div>
+                                <h3><a href="#new-transmission">A gentle hint for the Carnival Master's locked office?</a></h3>
+                                <p class="thread-excerpt">I found three ticket stubs and a brass key, but the lock has five slots. Please nudge me toward the next clue.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 7 REPLIES</summary>
+                                    <p><b>tape hiss:</b> Check the ticket colors against the lights above the stage.</p>
+                                    <p><b>last_call:</b> You have the right key—what could make a spare slot?</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;6 MIN AGO</span><span>◉ &nbsp;55 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>07</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-blue">VR</span><span><b>velvetrope</b><small>2 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="The Carnival Master has a different name on every poster">
+                            <div class="thread-vote" aria-label="29 votes"><span aria-hidden="true">▲</span><b>29</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>paper_moon</b></span></div>
+                                <h3><a href="#new-transmission">The Carnival Master has a different name on every poster</a></h3>
+                                <p class="thread-excerpt">Checked the big top, the midway, and the funhouse. Same handwriting, three different names. What is he hiding?</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 11 REPLIES</summary>
+                                    <p><b>mirrormaze:</b> Put the posters in date order. The initials spell something.</p>
+                                    <p><b>three_rings:</b> One name matches the signature in the guest book.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;14 MIN AGO</span><span>◉ &nbsp;96 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>11</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-orange">PM</span><span><b>paper_moon</b><small>3 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="help" data-title="Help! The clown keeps reappearing in every room">
+                            <div class="thread-vote" aria-label="27 votes"><span aria-hidden="true">▲</span><b>27</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-help">NEED A HINT?</span><span>STARTED BY <b>bigtop_blues</b></span></div>
+                                <h3><a href="#new-transmission">Help! The clown keeps reappearing in every room</a></h3>
+                                <p class="thread-excerpt">I leave the circus tent, come back, and there he is again. Is there a trick to getting past the smiling clown?</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 9 REPLIES</summary>
+                                    <p><b>blueballoon:</b> Try giving him the unicycle wheel from the prop shed.</p>
+                                    <p><b>nightshift:</b> He follows the music—change the tune at the calliope.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;3 MIN AGO</span><span>◉ &nbsp;62 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>09</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-blue">BB</span><span><b>blueballoon</b><small>1 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="Theory: the carnival clown is the narrator">
+                            <div class="thread-vote" aria-label="33 votes"><span aria-hidden="true">▲</span><b>33</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>three_rings</b></span></div>
+                                <h3><a href="#new-transmission">Theory: the carnival clown is the narrator</a></h3>
+                                <p class="thread-excerpt">Every time he appears, the soundtrack changes. Also, his dialogue is the only text that knows what we did last chapter.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 14 REPLIES</summary>
+                                    <p><b>softstatic:</b> The opening monologue uses the same rhyme scheme.</p>
+                                    <p><b>jaybird:</b> That would explain the fourth-wall joke after the tent scene.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;9 MIN AGO</span><span>◉ &nbsp;87 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>14</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-orange">CC</span><span><b>circus_crow</b><small>2 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="The funhouse mirrors show rooms from the next chapter">
+                            <div class="thread-vote" aria-label="15 votes"><span aria-hidden="true">▲</span><b>15</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>mirrormaze</b></span></div>
+                                <h3><a href="#new-transmission">The funhouse mirrors show rooms from the next chapter</a></h3>
+                                <p class="thread-excerpt">I spotted the ferris wheel reflection before unlocking the midway. Is the big top hiding a preview of the ending?</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 6 REPLIES</summary>
+                                    <p><b>paper_moon:</b> The cracked mirror shows the office with its door open.</p>
+                                    <p><b>velvetcurtain:</b> I saw a new tent reflected after finding the brass key.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;18 MIN AGO</span><span>◉ &nbsp;49 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>06</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-blue">MM</span><span><b>mirrormaze</b><small>4 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="help" data-title="Stuck in the library basement. What am I missing?">
+                            <div class="thread-vote" aria-label="18 votes"><span aria-hidden="true">▲</span><b>18</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-help">NEED A HINT?</span><span>STARTED BY <b>mossyboots</b></span></div>
+                                <h3><a href="#new-transmission">Stuck in the library basement. What am I missing?</a></h3>
+                                <p class="thread-excerpt">I've got the candle, the old map, and a suspiciously damp book. Tried combining everything with everything. No luck.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 12 REPLIES</summary>
+                                    <p><b>adventurelily:</b> Hold the map near the candle and look for the watermark.</p>
+                                    <p><b>tinfoilhat:</b> The damp book belongs on the empty shelf by the stairs.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;12 MIN AGO</span><span>◉ &nbsp;34 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>12</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar">AL</span><span><b>adventurelily</b><small>5 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="The lighthouse keeper is absolutely a time traveler">
+                            <div class="thread-vote" aria-label="42 votes"><span aria-hidden="true">▲</span><b>42</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>pixelprophet</b></span></div>
+                                <h3><a href="#new-transmission">The lighthouse keeper is absolutely a time traveler</a></h3>
+                                <p class="thread-excerpt">Hear me out: the newspaper dates don't line up, and he keeps saying "in my day" like it means something.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 28 REPLIES</summary>
+                                    <p><b>jaybird:</b> His pocket watch has the same symbol as the midway clock.</p>
+                                    <p><b>keychain:</b> The dates jump whenever the foghorn sounds.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;48 MIN AGO</span><span>◉ &nbsp;128 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>28</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-orange">JR</span><span><b>jaybird</b><small>8 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="collection" data-title="Show me your weirdest physical game manuals">
+                            <div class="thread-vote" aria-label="9 votes"><span aria-hidden="true">▲</span><b>9</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-collection">THE COLLECTION</span><span>STARTED BY <b>tape hiss</b></span></div>
+                                <h3><a href="#new-transmission">Show me your weirdest physical game manuals</a></h3>
+                                <p class="thread-excerpt">Mine has a handwritten note inside that just says "DON'T TRUST THE PARROT." Context? None.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 7 REPLIES</summary>
+                                    <p><b>tinfoilhat:</b> Mine came with a tiny folded map to a nonexistent tent.</p>
+                                    <p><b>velvetrope:</b> The parrot repeats the Carnival Master's backstage password!</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;2 HOURS AGO</span><span>◉ &nbsp;76 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>07</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-purple">TK</span><span><b>tinfoilhat</b><small>21 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="off-topic" data-title="What are we playing after we finish this one?">
+                            <div class="thread-vote" aria-label="23 votes"><span aria-hidden="true">▲</span><b>23</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-off-topic">THE PUB</span><span>STARTED BY <b>moonlogic</b></span></div>
+                                <h3><a href="#new-transmission">What are we playing after we finish this one?</a></h3>
+                                <p class="thread-excerpt">Looking for something with a great soundtrack and at least one extremely unnecessary rubber chicken.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 16 REPLIES</summary>
+                                    <p><b>moonphase:</b> Try the one with the haunted calliope and the runaway parade float.</p>
+                                    <p><b>softreset:</b> Anything with a ridiculous inventory puzzle gets my vote.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;3 HOURS AGO</span><span>◉ &nbsp;91 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>16</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-pink">MP</span><span><b>moonphase</b><small>36 MIN AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="help" data-title="A gentle hint for the clocktower puzzle?">
+                            <div class="thread-vote" aria-label="6 votes"><span aria-hidden="true">▲</span><b>6</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-help">NEED A HINT?</span><span>STARTED BY <b>softreset</b></span></div>
+                                <h3><a href="#new-transmission">A gentle hint for the clocktower puzzle?</a></h3>
+                                <p class="thread-excerpt">No spoilers please! I've noticed the stopped clocks, just not sure what the game wants me to notice about them.</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 4 REPLIES</summary>
+                                    <p><b>nightshift:</b> Compare the clock faces to the midway game tokens.</p>
+                                    <p><b>adventurelily:</b> One of the clocks is still keeping time—listen closely.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;5 HOURS AGO</span><span>◉ &nbsp;53 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>04</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-blue">NS</span><span><b>nightshift</b><small>1 HOUR AGO</small></span></div>
+                        </article>
+
+                        <article class="thread-card" data-category="lore" data-title="A small appreciation post for good endings">
+                            <div class="thread-vote" aria-label="31 votes"><span aria-hidden="true">▲</span><b>31</b></div>
+                            <div class="thread-main">
+                                <div class="thread-meta"><span class="tag tag-lore">LORE &amp; THEORIES</span><span>STARTED BY <b>softstatic</b></span></div>
+                                <h3><a href="#new-transmission">A small appreciation post for good endings</a></h3>
+                                <p class="thread-excerpt">You know the ones that make you sit there through the credits thinking about every choice you made?</p>
+                                <details class="reply-preview">
+                                    <summary>READ 2 OF 19 REPLIES</summary>
+                                    <p><b>keychain:</b> The final curtain call brought back every character I helped.</p>
+                                    <p><b>last_call:</b> That last line from the Carnival Master stayed with me.</p>
+                                </details>
+                                <div class="thread-footer"><span>◷ &nbsp;YESTERDAY</span><span>◉ &nbsp;204 VIEWS</span></div>
+                            </div>
+                            <div class="thread-replies"><b>19</b><span>REPLIES</span></div>
+                            <div class="last-reply"><span class="reply-avatar avatar-green">KC</span><span><b>keychain</b><small>2 HOURS AGO</small></span></div>
+                        </article>
+                        <p class="empty-state" id="empty-state" hidden>No threads found. Try another search or choose a different path.</p>
+                    </div>
+
+                    <!-- Marquee-style pause between the thread list and message form. -->
+                    <div class="intermission-sign" aria-label="Intermission: the show continues backstage">
+                        <span class="sign-star" aria-hidden="true">✦</span>
+                        <span><b>INTERMISSION</b><small>THE SHOW CONTINUES BACKSTAGE</small></span>
+                        <span class="sign-star" aria-hidden="true">✦</span>
+                    </div>
+
+                    <!-- This form creates a new thread on the page without reloading. -->
+                    <section class="composer" id="new-transmission" aria-labelledby="composer-title">
+                        <div class="composer-heading">
+                            <div><p class="eyebrow">YOUR TURN</p><h2 id="composer-title">Leave a message<span class="heading-period">.</span></h2></div>
+                            <span class="composer-ascii" aria-hidden="true">.---.<br>| o |<br>'---'</span>
+                        </div>
+                        <form id="thread-form">
+                            <label for="thread-title">SUBJECT</label>
+                            <input id="thread-title" name="title" type="text" maxlength="90" placeholder="What are you pondering?" required>
+                            <div class="form-row">
+                                <div class="form-category">
+                                    <label for="thread-category">PICK A PATH</label>
+                                    <select id="thread-category" name="category">
+                                        <option value="help">Need a hint?</option>
+                                        <option value="lore">Lore &amp; theories</option>
+                                        <option value="collection">The collection</option>
+                                        <option value="off-topic">The pub</option>
+                                    </select>
+                                </div>
+                                <button class="submit-button" type="submit">POST TO THE BOARD <span aria-hidden="true">↗</span></button>
+                            </div>
+                            <p class="form-feedback" id="form-feedback" role="status"></p>
+                        </form>
+                    </section>
+                </section>
+            </div>
+        </main>
+
+        <!-- Closing site credits. -->
+        <footer class="site-footer">
+            <a class="footer-mark" href="#">[&gt;_]</a>
+            <span>MADE WITH <span class="footer-heart">♥</span> AND A VERY FULL INVENTORY</span>
+            <span class="footer-savepoint" aria-label="Save point one">+-- SAVE POINT: 01 --+</span>
+            <span>© CURSOR &amp; KEY, 1994–2026</span>
+        </footer>
+    </div>
+</body>
+</html>
